@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    
+</head>
+<body>
+	<div onClick="myFunction()" class="ui dimmer modals visible active" >
+		<div onClick="stop(event)" class="ui standard modal visible active">
+			<video style="width: 100%" controls src="./videos/TGame.mp4"></video>
+		</div>
+	</div>
+	<script>
+    	function myFunction() {
+  			window.location.href = "http://localhost:3000/#portfolio";
+		}
+
+		function stop(event) {
+			event.stopPropagation()
+		}
+    </script>
+</body>
+</html>
